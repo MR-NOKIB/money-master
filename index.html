@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="text-info text-center display-3 fw-semibold mb-5">Money Master</h1>
+    <section class="container d-flex gap-5">
+        <div class="w-50">
+            <img class="img-fluid" src="assets/money.png" alt="">
+        </div>
+        <div class="p-4 bg-body-tertiary rounded-3 w-full">
+            <div class="">
+                <h3 class="fw-semibold text-center">Income</h3>
+                <p class="h4 text-end me-4">Income: <input id="income-field" class="bg-secondary-subtle border border-none mb-4" type="text"></p>
+                <p class="text-center fw-semibold h4 mb-4">Expenses</p>
+                <P class="h4 text-end me-4 mb-3">Food: <input id="food-field" class="bg-secondary-subtle border border-none" type="text"></P>
+                <P class="h4 text-end me-4 mb-3">Rent: <input id="rent-field" class="bg-secondary-subtle border border-none" type="text"></P>
+                <P class="h4 text-end me-4 mb-3">Clothes: <input id="clothes-field" class="bg-secondary-subtle border border-none" type="text"></P>
+            </div>
+            <div class="text-center mt-4">
+                <button id="btn-calculate" class="px-5 py-2 rounded bg-primary-subtle fw-bold mb-4">Calculate</button>
+                <p class="h4 mb-3">Total Expenses: <span id="expenses-total">00</span></p>
+                <p class="h4 mb-3">Balance: <span id="balance">00</span></p>
+                <p class="h4 mb-3">Save : <button class="px-5 bg-primary-subtle fw-semibold mb-3">20</button> % <button id="btn-save" class="px-5 bg-primary-subtle fw-semibold">Save</button></p>
+                <p class="h4 mb-3">Saving Amount: <span id="btn-savings">00</span></p>
+                <p class="h4">Remaining Balance: <span id="btn-remaining">00</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+    <script src="JS/common.js"></script>
+    <script src="JS/money.js"></script> 
+</body>
+</html>
